@@ -1,0 +1,196 @@
+body,html{height:100%;}
+/*body{
+    background-image: url(../../assets/img/bg.jpeg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+}*/
+.wrapper{
+    height: 100%;
+    background: #000;
+    width: 100%;
+    display: table;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.intro{
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+    width: 100%;
+}
+.quotes{
+    padding: 10px;
+    max-width: 350px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.quotes p {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .10em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .20em;
+    font-size:14px;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .5s step-end infinite;
+    margin-bottom: 10px;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orangered }
+}
+.view-project{
+    border: 1px solid orangered;
+    padding: 5px 10px;
+    font-size: 11px;
+    color: orangered;
+    opacity:.3;
+    transition:  ease 0.3s all;
+    -moz-transition: ease 0.3s all;
+    -webkit-transition:  ease 0.3s all;
+    -o-transition: ease 0.3s all;
+    border-radius:5px;
+}
+.view-project:hover{
+    /*background: linear-gradient(80deg, rgba(255, 97, 14, 0.6)35%, #c3abab 80%);*/
+    text-decoration: none;
+    color:orangered;
+    opacity:.6;
+}
+
+/* MODAL ABOUT */
+#animatedModal{background:#fff !important;}
+.about-modal{overflow-x:hidden;overflow-y:scroll;}
+#closeAbout{padding:15px;}
+#aboutMe{padding:15px;}
+#aboutMe article p.about-intro{font-size:1.5em}
+#aboutMe article p.details{text-align: justify;font-size: 0.95em;}
+#aboutMe article h1{font-size:4em;}
+#aboutMe article h2{
+    font-size: 2.3em;
+    font-weight: 900;
+}
+.about-me {padding-top:15px;padding-bottom:15px;}
+.me{height: 300px;width: 100%;}
+.me img {width: 100%;height: 100%;max-width: 100%;}
+.cv{
+    border: 1px solid orangered;
+    color: orangered;
+    padding: 5px 10px;
+    font-size: .85em;
+    background: transparent;
+    border-radius:4px;
+}
+.cv:hover,.cv:focus{
+    color:#fff;
+    background:orangered;
+    text-decoration: none;
+}
+.close-animatedModal{
+    width:50px;
+    height:50px;
+    margin:0 auto;
+}
+.close-animatedModal img{
+    width: 100%;
+    opacity: .6;
+    cursor:pointer;
+    transition: ease-in 0.1s ;
+    -moz-transition: ease-in 0.1s ;
+    -webkit-transition:  ease-in 0.1s ;
+    -o-transition: ease-in 0.1s ;
+}
+.close-animatedModal:hover img{
+    -ms-transform: rotate(36deg); /* IE 9 */
+    -webkit-transform: rotate(36deg); /* Chrome, Safari, Opera */
+    transform: rotate(36deg);
+}
+/* CSS navigation */
+.main-nav{
+    position: absolute;
+    bottom: 20%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.nav-content{list-style:none;padding:0;}
+.nav-content li{display:inline;}
+.nav-content li a {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.025em;
+    color: rgba(255,69,0,.3);
+    cursor:pointer;
+    transition:  ease 0.3s all;
+    -moz-transition: ease 0.3s all;
+    -webkit-transition:  ease 0.3s all;
+    -o-transition: ease 0.3s all;
+}
+.nav-content li:nth-child(2){
+    border-left:1px solid rgba(255,69,0,.3);
+    border-right:1px solid rgba(255,69,0,.3);
+    padding: 0 5px;
+}
+.nav-content li a:hover {
+    color:orangered;
+    opacity:.6;
+    text-decoration: none;
+}
+.about-page{
+    height:100%;
+    width:100%;
+    background: #fff;
+}
+.modal-dialog {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.modal-content{
+    height:100%;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+    display: table;
+}
+.body-content{display:table-cell;vertical-align: middle;margin:0 auto;}
+/* for desktop */
+@media only screen and (min-width:24em){
+    .quotes{max-width: 445px;}
+    .quotes p {font-size: 20px;}
+
+    .nav-content li a {
+        font-size: 17px !important;
+    }
+    .view-project{
+        padding: 6px 12px;
+        font-size: 15px;
+    }
+
+    #aboutMe article h2{
+        font-size:4em;
+    }
+    .row{
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+
+}
