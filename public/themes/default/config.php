@@ -65,6 +65,7 @@ return array(
             // $theme->asset()->add('jquery-ui', 'vendor/jqueryui/jquery-ui.min.js', array('jquery'));
             $theme->asset()->add('app.css', 'assets/css/app.css');
             $theme->asset()->add('bootstrap.css', 'assets/css/bootstrap.min.css');
+            $theme->asset()->add('fontawesome.css', 'assets/css/font-awesome.min.css');
             // Partial composer.
             // $theme->partialComposer('header', function($view)
             // {

@@ -1,7 +1,5 @@
 $(document).ready(function(){
-   /* $('.about').on('click',function(){
-        $('#aboutPage').modal('show');
-    })*/
+    var slider = $('#project-slider');
 
     $("#aboutPage").animatedModal({
         modalTarget: 'animatedModal',
@@ -9,10 +7,46 @@ $(document).ready(function(){
         animatedOut: 'rollOut'
     });
 
-    $("#skills").animatedModal({
+    $("#skillsPage").animatedModal({
         modalTarget: 'skillModal',
-        animatedIn: 'zoomIn',
-        animatedOut: 'zoomOutDown'
+        animatedIn: 'flip',
+        animatedOut: 'flipOutY'
     });
+
+    $("#workPage").animatedModal({
+        modalTarget: 'experienceModal',
+        animatedIn: 'flip',
+        animatedOut: 'flipOutY'
+    });
+
+    $(".proj").click(function() {
+        $('#experienceModal').animate({
+            scrollTop: $("#project").offset().top
+        }, 900);
+    });
+
+    $('.thumbnail-hover').animatedModal({
+        modalTarget: 'projectModal',
+        animatedIn: 'fadeInDown',
+        animatedOut: 'fadeOutUp'
+    });
+
+    /*slider.owlCarousel({
+        items:1,
+        pagination:true,
+        navigation:true,
+        navigationText : ["prev","next"]
+    });*/
+    var swiper = new Swiper('.swiper-container', {
+                paginationClickable: true
+     });
+
+
+/*$('.proj-prev').on('click',function(){
+        slider.trigger('slider.prev');
+    });
+    $('.proj-next').on('click',function(){
+        slider.trigger('slider.next');
+    });*/
 });
 
