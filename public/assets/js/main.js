@@ -17,7 +17,7 @@ $(document).ready(function(){
     $("#contactPage").animatedModal({
         modalTarget: 'contactModal',
         animatedIn: 'zoomIn',
-        animatedOut: 'bounceOut',
+        animatedOut: 'bounceOut'
     });
 
    /* $("#workPage").animatedModal({
@@ -31,12 +31,6 @@ $(document).ready(function(){
             scrollTop: $("#project").offset().top
         }, 1000);
     });
-
-    /*$('.thumbnail-hover').animatedModal({
-        modalTarget: 'projectModal',
-        animatedIn: 'fadeInDown',
-        animatedOut: 'fadeOutUp'
-    });*/
 
     $('.carousel').carousel()
 

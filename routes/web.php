@@ -15,3 +15,5 @@ Route::get('/', 'MainController@index');
 
 Route::match(array('GET','POST'),'/project/{id}'         ,  'MainController@projectList');
 Route::match(array('GET','POST'),'/portfolio'            ,  'MainController@redirectToExp');
+
+Route::match(array('GET','POST'),'/email'            ,  'MainController@myTestMail');

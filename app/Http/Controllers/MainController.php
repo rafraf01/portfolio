@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Theme;
 use App\Project;
 use Illuminate\Http\Request;
+use Mail;
+use App\Mail\SendingEmail;
 class MainController extends Controller
 {
 
@@ -42,5 +44,13 @@ class MainController extends Controller
 
         $theme = Theme::uses('default')->layout('portfolio')->setTitle('Portfolio');
         return $theme->scope('work.experience',$data)->render();
+    }
+
+    public function myTestMail(){
+        /*$myEmail = 'rafraf.dc@gmail.com';
+        Mail::to($myEmail)->send(new SendingEmail());
+
+
+        dd("Mail Send Successfully");*/
     }
 }

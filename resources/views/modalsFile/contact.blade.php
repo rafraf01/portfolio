@@ -37,31 +37,31 @@
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>first name</label>
-                                        <input type="text" class="form-control">
+                                        <input id="firstname" name="firstname" type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>last name</label>
-                                        <input type="text" class="form-control">
+                                        <input id="lastname" name="lastname" type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>email address</label>
-                                        <input type="text" class="form-control">
+                                        <input id="email" name="email" type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label>subject</label>
-                                        <input type="text" class="form-control">
+                                        <input id="subject" name="subject" type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label>message</label>
-                                        <textarea rows="3" class="form-control"></textarea>
+                                        <textarea id="message" name="message" rows="3" class="form-control"></textarea>
                                     </div>
                                 </div>
                             </div>

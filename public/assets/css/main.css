@@ -555,6 +555,7 @@ header.header-contact{
 }
 .contact-container{margin-bottom:20px;}
 .greetings{padding:20px;}
+.greetings h1,.greetings p{color:#fff;}
 #contactMe .left-div, #contactMe .right-div{
     min-height: 400px;
     padding: 10px;
