@@ -14,13 +14,13 @@
     <nav class="main-nav">
         <ul class="nav-content">
             <li class="about"><a id="aboutPage"  href="#animatedModal">About</a></li>
-            <li><a id="workPage" href="#experienceModal">Work</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="/portfolio">Work</a></li>
+            <li><a id="contactPage" href="#contactModal">Contact</a></li>
         </ul>
     </nav>
 @include('modalsFile.about')
 @include('modalsFile.skills')
-@include('modalsFile.experience')
+@include('modalsFile.contact')
 </div>
 
 

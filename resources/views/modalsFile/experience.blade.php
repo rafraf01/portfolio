@@ -9,7 +9,6 @@
                    <section id="closeMe">
                        <aside class="close-experienceModal">
                            <img src="../../assets/img/close.png">
-                           <img>
                        </aside>
                    </section>
                    <br>
@@ -77,13 +76,17 @@
                     @foreach($projects as $project)
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail">
-                            <a class="thumbnail-hover" href="#projectModal">
+                            <a class="thumbnail-hover" href="/project/{{$project->id}}" data-img-id="{{$project->id}}">
                                 <div class="to-hover">
                                     <div class="search-icon">
                                         <i class="fa fa-search-plus"></i>
                                     </div>
                                 </div>
-                                <img src="../../assets/img/bgs.jpg" data-img-id="{{$project->id}}"/>
+                                @if ($project->id == 1)
+                                <img src="../../assets/img/papers/papersllc.jpg">
+                                @else
+                                <img src="../../assets/img/comingsoon.jpg"/>
+                                @endif
                             </a>
                             <div class="caption text-center">
                                 <h3>{{ $project->project_title }}</h3>
@@ -97,4 +100,3 @@
         </section>
     </div>
 </div>
-@include('modalsFile.projects')

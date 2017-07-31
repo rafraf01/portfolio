@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Theme;
 use App\Project;
+use Illuminate\Http\Request;
 class MainController extends Controller
 {
 
@@ -15,5 +16,31 @@ class MainController extends Controller
         ];
         $theme = Theme::uses('default')->layout('default')->setTitle('rvdc');
         return $theme->scope('main.home',$data)->render();
+    }
+
+    public function projectList(Request $request)
+    {
+        $projectList = Project::where('id',$request->segment(2))->first();
+        $project_image = Project::all();
+
+        $data = [
+            'getProject' =>$projectList,
+            'projects' => $project_image
+        ];
+
+        $theme = Theme::uses('default')->layout('portfolio')->setTitle('Projects');
+        return $theme->scope('project.projects',$data)->render();
+    }
+
+    public function redirectToExp()
+    {
+        $project_image = Project::all();
+
+        $data = [
+            'projects' => $project_image
+        ];
+
+        $theme = Theme::uses('default')->layout('portfolio')->setTitle('Portfolio');
+        return $theme->scope('work.experience',$data)->render();
     }
 }
