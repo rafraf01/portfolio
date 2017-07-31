@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <a href="/" style="cursor:pointer">Back to home</a>
+                    <a class="close-contactModal" style="cursor:pointer">Back to home</a>
                 </div>
         </section>
     </div>
