@@ -93,6 +93,8 @@
                             </div>
                             @if ($project->id == 1)
                             <img src="../../assets/img/papers/papersllc.jpg">
+                            @elseif ($project->id == 2)
+                            <img src="../../assets/img/papers/lc-main.jpg"/>
                             @else
                             <img src="../../assets/img/comingsoon.jpg"/>
                             @endif

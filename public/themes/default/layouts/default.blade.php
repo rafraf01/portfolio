@@ -10,6 +10,7 @@
         {!! Theme::asset()->styles() !!}
     </head>
     <body>
+    <input type="hidden" id="baseURL" value="{{ url('') }}" >
 <!--        {!! Theme::partial('header') !!}-->
 
         <div class="container">

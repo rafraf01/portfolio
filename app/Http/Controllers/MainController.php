@@ -31,7 +31,7 @@ class MainController extends Controller
             'projects' => $project_image
         ];
 
-        $theme = Theme::uses('default')->layout('portfolio')->setTitle('Projects');
+        $theme = Theme::uses('default')->layout('portfolio')->setTitle('rvdc');
         return $theme->scope('project.projects',$data)->render();
     }
 
@@ -43,7 +43,7 @@ class MainController extends Controller
             'projects' => $project_image
         ];
 
-        $theme = Theme::uses('default')->layout('portfolio')->setTitle('Portfolio');
+        $theme = Theme::uses('default')->layout('portfolio')->setTitle('rvdc');
         return $theme->scope('work.experience',$data)->render();
     }
 
