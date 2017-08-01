@@ -110,9 +110,14 @@ body,html{height:100%;}
 #animatedModal{background:#fff !important;}
 .about-modal,.skill-modal{overflow-x:hidden;overflow-y:scroll;}
 #aboutMe{padding:15px;}
-#aboutMe article p.about-intro{font-size:1.5em;font-family: 'Poppins',sans-serif}
+#aboutMe article p.about-intro{font-size:1.7em;font-family: 'Poppins',sans-serif;text-align:center}
+#aboutMe .sub{
+    font-size: 13px;
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+}
 #aboutMe article p.details{text-align: justify;font-size: 0.95em;font-family: 'Poppins',sans-serif}
-#aboutMe article h1{font-size:4em;}
+#aboutMe article h1{font-size:4em;text-align:center;}
 #aboutMe article h2{
     font-size: 2.3em;
     font-weight: 900;

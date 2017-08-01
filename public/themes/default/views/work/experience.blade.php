@@ -34,7 +34,9 @@
                                 </div>
                                 <div class="company-body">
                                     <p class="text-muted">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                        Junior Software Developer<br><br>
+                                        Perform duties as a frontend and backend developer in selected projects. Develop web-based applications using PHP with Laravel Framewok. Plan, coordinate and execute front-end and back-end requirements
+                                        given by the client.
                                     </p>
                                 </div>
                             </div>
@@ -50,14 +52,17 @@
                                 </div>
                                 <div class="company-body">
                                     <p class="text-muted">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                                        Computer Programmer<br><br>
+                                        Official member of company's website committee. Performed system level testing to verify software quality and modified existing application to correct errors and adapt to new software to improve performance. Provided backend support for one of the project given.
                                     </p>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="company-image heartbeat">
-                                <h4>Hire<br>me<br>now!</h4>
+                                <a id="hireMe" href="#contactModal">
+                                    <h4>Hire<br>me<br>now!</h4>
+                                </a>
                             </div>
                         </li>
                     </ul>
@@ -103,3 +108,4 @@
         </div>
     </section>
 </div>
+@include('modalsFile.contact')

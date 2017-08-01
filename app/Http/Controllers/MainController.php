@@ -6,6 +6,7 @@ use Theme;
 use App\Project;
 use Illuminate\Http\Request;
 use Mail;
+use Response;
 use Illuminate\Support\Facades\Input;
 class MainController extends Controller
 {
@@ -63,5 +64,10 @@ class MainController extends Controller
         });
 
         return "Your message has been sent successfully";
+    }
+
+    public function getDownload(){
+        $file = public_path(). "/pdf/rafaeldelacruz.pdf";
+        return Response::download($file);
     }
 }

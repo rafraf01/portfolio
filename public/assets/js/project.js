@@ -16,6 +16,12 @@ $(document).ready(function(){
         return false;
     });
 
+    $("#hireMe").animatedModal({
+        modalTarget: 'contactModal',
+        animatedIn: 'rubberBand',
+        animatedOut: 'bounceOut'
+    });
+
     $('#contactForm').submit(function(e){
         e.preventDefault();
     });

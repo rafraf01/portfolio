@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <a class="close-contactModal" style="cursor:pointer">Back to home</a>
+                    <a class="close-contactModal" style="cursor:pointer">Back</a>
                 </div>
         </section>
     </div>

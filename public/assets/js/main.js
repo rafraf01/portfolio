@@ -16,7 +16,7 @@ $(document).ready(function(){
     });
     $("#contactPage").animatedModal({
         modalTarget: 'contactModal',
-        animatedIn: 'zoomIn',
+        animatedIn: 'rubberBand',
         animatedOut: 'bounceOut'
     });
 
