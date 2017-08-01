@@ -120,7 +120,7 @@ body,html{height:100%;}
 .about-me {padding-top:15px;padding-bottom:15px;}
 .me{
     height: 350px;
-    width: 350px;
+    width: 100%;
     margin: 0 auto;
     box-shadow: 3px 5px 8px 0 rgba(0,0,0,0.3);
 }
@@ -699,6 +699,9 @@ ul.contact-info li{
 .body-content{display:table-cell;vertical-align: middle;margin:0 auto;}
 /* for desktop */
 @media only screen and (min-width:768px){
+    .me{
+        width:350px;
+    }
     .greetings{padding:50px 0;}
     .quotes{max-width: 445px;}
     .quotes p {font-size: 20px;}
@@ -775,6 +778,9 @@ ul.contact-info li{
     #arrow{font-size:25px;}
 }
 @media only screen and (min-width:1200px){
+    .me{
+        width:350px;
+    }
     .greetings{padding:50px;}
     .nav-content li{padding:0 10px;}
     .nav-content li a {
