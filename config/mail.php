@@ -57,7 +57,7 @@ return [
 
     'from' => [
         'address' => null,
-        'name' => null,
+        'name' => 'Web Master',
     ],
 
     /*

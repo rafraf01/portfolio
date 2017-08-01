@@ -57,8 +57,7 @@ class MainController extends Controller
         );
 
         Mail::send('email.email', $data, function ($message) {
-            $name = Input::get('firstname').' '.Input::get('lastname');
-            $message->from(Input::get('email'), $name);
+            $message->from(Input::get('email'),null);
 
             $message->to('edummy93@gmail.com')->subject('Web Master');
         });
