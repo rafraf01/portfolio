@@ -29,11 +29,11 @@
                             </div>
                             <div class="company-panel">
                                 <div class="company-heading">
-                                    <h4>2016 - 2017</h4>
-                                    <h4>Republisys Inc.</h4>
+                                    <h4 class="wow fadeInLeft">2016 - 2017</h4>
+                                    <h4 class="wow fadeInLeft">Republisys Inc.</h4>
                                 </div>
-                                <div class="company-body">
-                                    <p class="text-muted">
+                                <div class="company-body" >
+                                    <p class="text-muted wow fadeInLeft">
                                         Junior Software Developer<br><br>
                                         Perform duties as a frontend and backend developer in selected projects. Develop web-based applications using PHP with Laravel Framewok. Plan, coordinate and execute front-end and back-end requirements
                                         given by the client.
@@ -47,11 +47,11 @@
                             </div>
                             <div class="company-panel">
                                 <div class="company-heading">
-                                    <h4>2014 - 2016</h4>
-                                    <h4>Republisys Inc.</h4>
+                                    <h4 class="wow fadeInLeft">2014 - 2016</h4>
+                                    <h4 class="wow fadeInLeft">Republisys Inc.</h4>
                                 </div>
                                 <div class="company-body">
-                                    <p class="text-muted">
+                                    <p class="text-muted wow fadeInLeft">
                                         Computer Programmer<br><br>
                                         Official member of company's website committee. Performed system level testing to verify software quality and modified existing application to correct errors and adapt to new software to improve performance. Provided backend support for one of the project given.
                                     </p>
@@ -72,8 +72,8 @@
     </section>
     <section id="parallax">
         <div class="parallax">
-            <p class="quote text-center">Success is the result of perfection, hard work, learning from failure, loyalty and persistence.</p>
-            <p class="writer text-center">- Colin Powell</p>
+            <p class="quote text-center wow fadeInLeft">Success is the result of perfection, hard work, learning from failure, loyalty and persistence.</p>
+            <p class="writer text-center wow fadeInLeft">- Colin Powell</p>
         </div>
     </section>
     <section id="project">
@@ -85,7 +85,7 @@
                 @foreach($projects as $project)
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">
-                        <a class="thumbnail-hover" href="/project/{{$project->id}}" data-img-id="{{$project->id}}">
+                        <a class="thumbnail-hover wow zoomIn" href="/project/{{$project->id}}" data-img-id="{{$project->id}}">
                             <div class="to-hover">
                                 <div class="search-icon">
                                     <i class="fa fa-search-plus"></i>
@@ -99,7 +99,7 @@
                             <img src="../../assets/img/comingsoon.jpg"/>
                             @endif
                         </a>
-                        <div class="caption text-center">
+                        <div class="caption text-center wow fadeInLeft">
                             <h3>{{ $project->project_title }}</h3>
                             <p>{{ $project->sub_title }}</p>
                         </div>

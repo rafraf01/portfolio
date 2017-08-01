@@ -63,6 +63,7 @@ return array(
             $theme->asset()->add('jquery', 'assets/js/jquery.min.js');
             $theme->asset()->add('bootstrap.js', 'assets/js/bootstrap.min.js');
             $theme->asset()->add('sweetalert.js', 'assets/js/plugins/sweetalert.min.js');
+            $theme->asset()->add('wow.js', 'assets/js/plugins/wow.min.js');
             // $theme->asset()->add('jquery-ui', 'vendor/jqueryui/jquery-ui.min.js', array('jquery'));
             $theme->asset()->add('app.css', 'assets/css/app.css');
             $theme->asset()->add('bootstrap.css', 'assets/css/bootstrap.min.css');

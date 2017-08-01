@@ -15,15 +15,15 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <div class="modal-body">
-                    <h1 class="text-center" id="projectTitle">{{ $getProject->project_title}}</h1>
-                    <p class="desc text-center">{{ $getProject->sub_project_desc }}</p>
+                    <h1 class="text-center wow lightSpeedIn" id="projectTitle">{{ $getProject->project_title}}</h1>
+                    <p class="desc text-center wow lightSpeedIn">{{ $getProject->sub_project_desc }}</p>
                     <figure>
                         <img src="{{$getProject->file}}" class="img-responsive img-centered">
                     </figure>
-                    <p class="details">
+                    <p class="details wow lightSpeedIn">
                        {{ $getProject->description }}
                     </p>
-                    <p class="text-center" style="margin-top:30px;">
+                    <p class="text-center wow lightSpeedIn" style="margin-top:30px;">
                        Visit {{$getProject->project_title}} <a href="">here</a>.
                     </p>
                 </div>
