@@ -62,9 +62,11 @@ return array(
             // $theme->asset()->add('jquery', 'vendor/jquery/jquery.min.js');
             $theme->asset()->add('jquery', 'assets/js/jquery.min.js');
             $theme->asset()->add('bootstrap.js', 'assets/js/bootstrap.min.js');
+            $theme->asset()->add('sweetalert.js', 'assets/js/plugins/sweetalert.min.js');
             // $theme->asset()->add('jquery-ui', 'vendor/jqueryui/jquery-ui.min.js', array('jquery'));
             $theme->asset()->add('app.css', 'assets/css/app.css');
             $theme->asset()->add('bootstrap.css', 'assets/css/bootstrap.min.css');
+            $theme->asset()->add('sweetalert.css', 'assets/css/plugins/sweetalert.css');
             $theme->asset()->add('fontawesome.css', 'assets/css/font-awesome.min.css');
             // Partial composer.
             // $theme->partialComposer('header', function($view)

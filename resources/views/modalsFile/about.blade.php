@@ -4,7 +4,6 @@
             <section id="closeMe">
                 <aside class="close-animatedModal">
                     <img src="../../assets/img/close.png">
-                    <img>
                 </aside>
             </section>
             <section id="aboutMe">
@@ -20,7 +19,7 @@
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="me">
-                            <img src="../../assets/img/bg.jpeg">
+                            <img src="../../assets/img/rafraf.jpg">
                         </div>
                     </div>
                 </div>

@@ -16,4 +16,30 @@ $(document).ready(function(){
         return false;
     });
 
+    $('#contactForm').submit(function(e){
+        e.preventDefault();
+    });
+
+    $('#send').on('click',function(){
+        var $form = $('#contactForm');
+
+        if ($('#firstname').val() == '' || $('#lastname').val() == '' || $('#email').val() == ''){
+            swal("Error!", "Please fill up required fields.", "error");
+        }else{
+            $('#loader').fadeIn('slow');
+            $.ajax({
+                url : '/email',
+                type : 'post',
+                data: $form.serializeArray(),
+                success : function (data){
+                    $('#loader').fadeOut('slow');
+                    swal("Success!", data, "success");
+                    $('.confirm').click(function(){
+                        location.reload();
+                    });
+                }
+            })
+        }
+    });
+
 });

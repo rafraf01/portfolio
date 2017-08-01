@@ -6,7 +6,7 @@ use Theme;
 use App\Project;
 use Illuminate\Http\Request;
 use Mail;
-use App\Mail\SendingEmail;
+use Illuminate\Support\Facades\Input;
 class MainController extends Controller
 {
 
@@ -46,11 +46,23 @@ class MainController extends Controller
         return $theme->scope('work.experience',$data)->render();
     }
 
-    public function myTestMail(){
-        /*$myEmail = 'rafraf.dc@gmail.com';
-        Mail::to($myEmail)->send(new SendingEmail());
+    public function myTestMail(Request $request){
+        $array = $request->all();
 
+        $data = array(
+            'name' => $array['firstname'].' '.$array['lastname'],
+            'email' => $array['email'],
+            'subject' => $array['subject'],
+            'messages' =>  $array['message']
+        );
 
-        dd("Mail Send Successfully");*/
+        Mail::send('email.email', $data, function ($message) {
+            $name = Input::get('firstname').' '.Input::get('lastname');
+            $message->from(Input::get('email'), $name);
+
+            $message->to('edummy93@gmail.com')->subject('Web Master');
+        });
+
+        return "Your message has been sent successfully";
     }
 }
