@@ -53,7 +53,6 @@ class MainController extends Controller
         $data = array(
             'name' => $array['firstname'].' '.$array['lastname'],
             'email' => $array['email'],
-            'subject' => $array['subject'],
             'messages' =>  $array['message']
         );
 

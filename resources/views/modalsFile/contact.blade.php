@@ -50,16 +50,10 @@
                                             <input id="lastname" name="lastname" type="text" class="form-control">
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-12">
                                         <div class="form-group">
                                             <label>email address</label><span> *</span>
                                             <input id="email" name="email" type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label>subject</label>
-                                            <input id="subject" name="subject" type="text" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-lg-12">

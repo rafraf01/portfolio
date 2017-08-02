@@ -28,23 +28,30 @@ $(document).ready(function(){
 
     $('#send').on('click',function(){
         var $form = $('#contactForm');
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 
-        if ($('#firstname').val() == '' || $('#lastname').val() == '' || $('#email').val() == ''){
-            swal("Error!", "Please fill up required fields.", "error");
-        }else{
-            $('#loader').fadeIn('slow');
-            $.ajax({
-                url : '/email',
-                type : 'post',
-                data: $form.serializeArray(),
-                success : function (data){
-                    $('#loader').fadeOut('slow');
-                    swal("Success!", data, "success");
-                    $('.confirm').click(function(){
-                        location.reload();
-                    });
-                }
-            })
+        if(!emailReg.test($('#email').val())){
+            swal("Error!", "Please enter a valid email.", "error");
+        }
+        else{
+            if ($('#firstname').val() == '' || $('#lastname').val() == '' || $('#email').val() == ''){
+             swal("Error!", "Please fill up required fields.", "error");
+             }
+            else{
+             $('#loader').fadeIn('slow');
+             $.ajax({
+             url : '/email',
+             type : 'post',
+             data: $form.serializeArray(),
+             success : function (data){
+             $('#loader').fadeOut('slow');
+             swal("Success!", data, "success");
+             $('.confirm').click(function(){
+             location.reload();
+             });
+             }
+             })
+             }
         }
     });
 

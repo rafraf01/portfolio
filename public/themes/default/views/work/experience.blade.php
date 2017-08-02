@@ -53,7 +53,7 @@
                                 <div class="company-body">
                                     <p class="text-muted wow fadeInLeft">
                                         Computer Programmer<br><br>
-                                        Official member of company's website committee. Performed system level testing to verify software quality and modified existing application to correct errors and adapt to new software to improve performance. Provided backend support for one of the project given.
+                                        Created web application using ASP.net and SQL server. Official member of company's website committee. Performed system level testing to verify software quality and modified existing application to correct errors and adapt to new software to improve performance.
                                     </p>
                                 </div>
                             </div>
