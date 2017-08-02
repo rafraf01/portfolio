@@ -12,9 +12,6 @@
 <div class="container">
     <div class="message-section">
         <p><strong>Message from: </strong>{{ $email }} ({{ $name }})</p>
-        <p><strong>Subject:</strong><br>
-            {{ $subject }}
-        </p>
         <p><strong>Message:</strong><br>
             {{ $messages }}
         </p>

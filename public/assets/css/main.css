@@ -178,6 +178,7 @@ body,html{height:100%;}
 }
 
 /* Skills Modal */
+#skillModal {    background: url(https://images.pexels.com/photos/296116/pexels-photo-296116.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) no-repeat center center/cover;}
 #skills article h1{text-align:center;text-transform:uppercase;}
 .skill-modal .modal-content{background:transparent !important;}
 .skill-image{

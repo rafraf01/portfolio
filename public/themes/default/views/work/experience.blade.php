@@ -48,7 +48,7 @@
                             <div class="company-panel">
                                 <div class="company-heading">
                                     <h4 class="wow fadeInLeft">2014 - 2016</h4>
-                                    <h4 class="wow fadeInLeft">Republisys Inc.</h4>
+                                    <h4 class="wow fadeInLeft">Philippine Postal Corporation</h4>
                                 </div>
                                 <div class="company-body">
                                     <p class="text-muted wow fadeInLeft">
