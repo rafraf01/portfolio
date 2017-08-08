@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>{!! Theme::get('title') !!}</title>
+    <link rel="SHORTCUT ICON" href="../assets/img/rafraf.jpg">
     <meta charset="utf-8">
     <meta name="keywords" content="{!! Theme::get('keywords') !!}">
     <meta name="description" content="{!! Theme::get('description') !!}">
